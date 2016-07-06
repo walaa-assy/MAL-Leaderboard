@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:context="com.example.administrator.pointerapplication.AddActivity_Fragment"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- TODO: Update blank fragment layout -->
+<TextView
+    android:id="@+id/textview_username"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_margin="20dp" />
+
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="?android:attr/spinnerItemStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="#808080"
+        android:text="[Select Activity...]"
+        android:focusable="true"
+        android:gravity="center_vertical" />
+    <EditText
+        android:id="@+id/activityURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="16dp"
+        android:hint="@string/hint_activity"
+        android:inputType="textUri"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_add_activity"
+        android:layout_gravity="center" />
+</LinearLayout>
